@@ -15,7 +15,73 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://moma-token.com/">
     <meta property="og:site_name" content="Moma-Token">
+    <meta property="og:image" content="https://moma-token.com/og-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Moma-Token - 永不移动Token稳定算力中心">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Moma-Token - Token中转站 | 稳定Token输出 | Token源头厂家 | 算力出海">
+    <meta name="twitter:description" content="Moma-Token 永不移动Token稳定算力中心，Token中转站直供，稳定Token输出，Token免费测试，支持Token出海与算力出海。">
+    <meta name="twitter:image" content="https://moma-token.com/og-image.svg">
     <meta name="robots" content="index, follow">
+    <!-- FAQ结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Moma Token 与直接向各厂商购买 API 有什么区别？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "主要区别在于便捷性与成本。直接向各厂商购买需要分别注册账号、单独充值、分别对接不同格式的 API，管理和对齐成本较高。Moma Token 通过统一网关聚合多家厂商资源，你只需要一个账户、一套 API 密钥、一份账单即可使用全部模型。此外，我们的集中采购议价能力通常能为你带来 35%-60% 的成本优势。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Token 是如何计算的？不同模型之间的 Token 可以通用吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我们采用标准化的 Token 计量体系。不同模型的 Token 换算系数会在控制台明确标注（例如：1 个标准 Token = 1 个 GPT-4o Token ≈ 1.2 个 Claude Token）。购买的是「标准 Token 额度」，调用任何模型时按对应换算系数扣除。这样设计让你可以灵活地在不同模型之间调配算力资源，而不必担心各家的独立计费规则。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "数据安全如何保障？我的对话内容会被存储吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "数据安全是我们的核心关注点。首先，传输全程采用 TLS 1.3 加密；其次，我们不会主动存储你的 API 请求内容与模型回复数据，仅保留必要的匿名化统计信息（如调用次数、Token 用量）用于计费与运维。对于企业版和定制方案客户，我们还支持私有化部署选项，确保数据完全不出您的内网环境。平台已通过 ISO 27001 信息安全管理体系认证。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "如何从现有的 OpenAI / 其他厂商迁移到 Moma Token？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "迁移非常简单。由于我们的 API 完全兼容 OpenAI 的接口格式，你只需要做两件事：第一，将 API Base URL 从 api.openai.com 替换为 api.moma-token.com；第二，将 API Key 替换为你在 Moma Token 控制台生成的密钥。其余代码（包括请求参数、流式调用方式等）均无需修改。我们提供详细的迁移指南文档，以及一对一的技术支持协助你完成切换。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "如果某个上游供应商出现故障，会影响我的服务吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我们的智能路由系统设计了多层容错机制。当某个供应商节点出现异常时，系统会自动将请求切换到备用节点或其他等效模型上，整个过程对上层应用透明。对于配置了自动降级策略的用户，还可以设定当主力模型不可用时自动降级至替代模型继续提供服务，最大限度保障业务连续性。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "套餐内的 Token 用完了怎么办？是否支持超额使用？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "支持多种续费与扩容方式。当套餐额度即将用尽时（默认阈值为 80%），系统会通过邮件和控制台通知提醒你。你可以选择：1) 按原价追加同等额度的补充包；2) 升级到更高档位套餐；3) 开启按量超额模式（超出部分按标准单价计费）。企业版用户还可设置自动续费规则，避免因余额不足导致服务中断。"
+          }
+        }
+      ]
+    }
+    </script>
     <style>
         /* ===== Reset & Base ===== */
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
